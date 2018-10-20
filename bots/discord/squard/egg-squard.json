@@ -1,0 +1,47 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v1"
+    },
+    "exported_at": "2018-02-22T13:32:44-05:00",
+    "name": "Squard",
+    "author": "vituu@xvideos.com",
+    "description": "Vai tomar no cu vitor",
+    "image": "quay.io\/parkervcp\/pterodactyl-images:nodejs",
+    "startup": "node main.js",
+    "config": {
+        "files": "",
+        "startup": "",
+        "logs": "",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "wget ivituu.com",
+            "container": "node:8.9-alpine",
+            "entrypoint": "ash"
+        }
+    },
+    "variables": [
+        {
+            "name": "client_token",
+            "description": "Token do bot",
+            "env_variable": "CLIENT_TOKEN",
+            "default_value": "token_do_seu_bot",
+            "user_viewable": 1,
+            "user_editable": 1,
+            "rules": "required|string|max:75"
+        }
+        
+        {
+            "name": "main",
+            "description": "Main do bot",
+            "env_variable": "STARTUP_MAIN",
+            "default_value": "main.js",
+            "user_viewable": 1,
+            "user_editable": 1,
+            "rules": "required|string|max:75"
+        }
+        
+    ]
+}
